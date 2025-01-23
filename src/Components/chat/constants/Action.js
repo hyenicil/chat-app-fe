@@ -8,7 +8,7 @@ export const createChat=(chatData) => async(dispatch) => {
             method:"POST",
             headers: {
                 "Content-Type":"application/json",
-                Authorization:`Bearer ${chat.token}`
+                Authorization:`Bearer ${chatData.token}`
             },
             body:JSON.stringify(chatData.data)
         })
